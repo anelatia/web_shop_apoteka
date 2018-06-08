@@ -1,0 +1,42 @@
+﻿@{  
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "ListProducts";
+    var db = Database.Open("StarterSite");
+    var selectQueryString = "SELECT * FROM Proizvodi ORDER BY Naziv";
+}
+
+
+
+<title>Apoteka</title>
+<style>
+    table, th, td {
+        border: solid 1px #bbbbbb;
+        border-collapse: collapse;
+        padding: 2px;
+    }
+</style>
+
+<h1>Proizvodi</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Naziv</th>
+            <th>Cijena</th>
+            <th>Pakovanje</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in db.Query(selectQueryString))
+        {
+            <tr>
+                <td>@row.ID</td>
+                <td>@row.Naziv</td>
+                <td>@row.Cijena</td>
+                <td>@row.Pakovanje</td>
+
+            </tr>
+
+        }
+    </tbody>
+</table>

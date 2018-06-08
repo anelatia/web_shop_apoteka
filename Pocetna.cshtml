@@ -1,0 +1,228 @@
+﻿@{
+    Layout = "~/_SiteLayout.cshtml";
+    Page.Title = "Pocetna";
+}
+@section featured {
+    body id="page-top" data-spy="scroll" data-target=".navbar-custom">
+    <header>
+
+        <div id="wrapper">
+
+            <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+                <div class="top-area">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <p class="bold text-left">Ponedjeljak - Subota, 8:00 - 20:00 </p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="container navigation">
+
+                    <div class="navbar-header page-scroll">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <a class="navbar-brand" href="~/Pocetna.cshtml">
+                            <img src="img/logo.png" alt="" width="150" height="40" />
+                        </a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="active"><a href="~/Pocetna.cshtml">Početna</a></li>
+                            <li><a href="~/O-nama.cshtml">O nama</a></li>
+                            <li><a href="~/Proizvodi.cshtml">Proizvodi</a></li>
+                            <li><a href="~/Kontakt.cshtml">Kontakt</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="badge custom-badge red pull-right"></span>Više <b class="caret"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="~/Kontakt.cshtml">Kozmetika</a></li>
+                                    <li><a href="~/Medicinska-pomagala.cshtml">Medicinska pomagala</a></li>
+                                    <li><a href="~/Video.cshtml">Video</a></li>
+                                    <li><a href="~/Admin.cshtml">Admin</a></li>
+                                </ul>
+                            <li class="">
+                                <a href="#login" role="button" data-toggle="modal" style="padding-right:0">
+                                    <span class="btn
+    btn-large btn-success">Login</span>
+                                </a>
+                                <div id="login" class="modal hide fade in" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="false">
+                                    <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                        <h3>Login Block</h3>
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                </li>
+        </div>
+        </nav>
+
+    </header>
+    <!-- Sec
+      tion: intro -->
+    <section id="intro" class="intro">
+        <div class="intro-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="wow fadeInDown" data-wow-offset="0" data-wow-delay="0.1s">
+                            <h2 class="h-ultra">AS APOTEKA</h2>
+                        </div>
+                        <div class="wow fadeInUp" data-wow-offset="0" data-wow-delay="0.1s">
+                            <h4 class="h-light">Izaberite najbolje za vas</h4>
+                        </div>
+                        <div class="well well-trans">
+                            <div class="wow fadeInRight" data-wow-delay="0.1s">
+
+                                <ul class="lead-list">
+                                    <li><span class="fa fa-check fa-2x icon-success"></span> <span class="list"><strong>Zdravlje na prvom mjestu</strong><br />O zdravlju se brine dok si još zdrav</span></li>
+                                    <li>
+                                        <span class="fa fa-check fa-2x icon-success"></span> <span class="list">
+                                            <strong>Povoljni mjesečni paketi</strong><br />Zdravlje  i zdrav duh ispred svega
+                                        </span>
+                                    </li>
+                                    <li><span class="fa fa-check fa-2x icon-success"></span> <span class="list"><strong>Budite u prijateljskom okruženju</strong><br />Birajte aktivnosti koje će uvećati zadovljstvo i zabavu</span></li>
+                                </ul>
+                                <p class="text-right wow bounceIn" data-wow-delay="0.4s">
+                                    <a href="#" class="btn btn-skin btn-lg">Detaljnije <i class="fa fa-angle-right"></i></a>
+                                </p>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="wow fadeInUp" data-wow-duration="2s" data-wow-delay="0.2s">
+                            <img src="img/dummy/img-1.png" class="img-responsive" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- /Section: intro -->
+    <!-- Section: works -->
+    <section id="facilities" class="home-section paddingbot-60">
+        <div class="container marginbot-50">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="wow fadeInDown" data-wow-delay="0.1s">
+                        <div class="section-heading text-center">
+                            <h2 class="h-bold">Proizvodi</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="divider-short"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="wow bounceInUp" data-wow-delay="0.2s">
+                        <div id="owl-works" class="owl-carousel">
+                            <div class="item"><a href="img/photo/slika1.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/1@2x.jpg"><img src="img/photo/slika1.jpg" class="img-responsive" alt="img"></a></div>
+                            <div class="item"><a href="img/photo/slika2.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/2@2x.jpg"><img src="img/photo/slika2.jpg" class="img-responsive " alt="img"></a></div>
+                            <div class="item"><a href="img/photo/slika3.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/3@2x.jpg"><img src="img/photo/slika3.jpg" class="img-responsive " alt="img"></a></div>
+                            <div class="item"><a href="img/photo/slika4.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/4@2x.jpg"><img src="img/photo/slika4.jpg" class="img-responsive " alt="img"></a></div>
+                            <div class="item"><a href="img/photo/slika5.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/5@2x.jpg"><img src="img/photo/slika5.jpg" class="img-responsive " alt="img"></a></div>
+                            <div class="item"><a href="img/photo/slika6.jpg" title="This is an image title" data-lightbox-gallery="gallery1" data-lightbox-hidpi="img/works/6@2x.jpg"><img src="img/photo/slika6.jpg" class="img-responsive " alt="img"></a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Section: works -->
+    <!-- Section: pricing -->
+    <section id="pricing" class="home-section bg-gray paddingbot-60">
+        <div class="container marginbot-50">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2">
+                    <div class="wow lightSpeedIn" data-wow-delay="0.1s">
+                        <div class="section-heading text-center">
+                            <h2 class="h-bold">Paketi zdravlja</h2>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="divider-short"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-4 pricing-box">
+                    <div class="wow bounceInUp" data-wow-delay="0.1s">
+                        <div class="pricing-content general">
+                            <h2>Paket zdravlja Fit 1</h2>
+                            <h3>33<sup>.99KM</sup> </h3>
+                            <ul>
+                                <li>Skeyndor Paket Power Retinol/Suha koža<i class="fa fa-check icon-success"></i></li>
+                                <li>Skeyndor Paket Power Retinol/Mješovita koža<i class="fa fa-check icon-success"></i></li>
+                                <li>Skeyndor Paket Power C/ Mješovita koža<i class="fa fa-check icon-success"></i></li>
+                                <li><del>Skeyndor paket Power C/ Suha koža</del> <i class="fa fa-times icon-danger"></i></li>
+                            </ul>
+
+                            <div class="price-bottom">
+                                <a href="#" class="btn btn-skin btn-lg">Kupovina</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 pricing-box featured-price">
+                    <div class="wow bounceInUp" data-wow-delay="0.3s">
+                        <div class="pricing-content featured">
+                            <h2>Zlatni paket zdravlja</h2>
+                            <h3>66<sup>.99KM</sup> </h3>
+                            <ul>
+                                <li>Aktival Beta glukan Forte 500mg+Vitamin C kapsule 60 kom<i class="fa fa-check icon-success"></i></li>
+                                <li>Aktival Beta glukan Forte 500mg+Vitamin C kapsule 90 kom.<i class="fa fa-check icon-success"></i></li>
+                                <li>Api Magnevit 375mg šumeće tablete 20 kom<i class="fa fa-check icon-success"></i></li>
+                                <li>ChildLife Cod liver oil 237ml (ulje jetre bakalara)<i class="fa fa-check icon-success"></i></li>
+                                <li>Bios line Enerplus Noni ampule 12 kom.<i class="fa fa-check icon-success"></i></li>
+                            </ul>
+
+                            <div class="price-bottom">
+                                <a href="#" class="btn btn-skin btn-lg">Kupovina</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 pricing-box">
+                    <div class="wow bounceInUp" data-wow-delay="0.2s">
+                        <div class="pricing-content general last">
+                            <h2>Paket zdravlja Fit 2</h2>
+                            <h3>44<sup>.99KM</sup></h3>
+                            <ul>
+                                <li>Skeyndor Paket Global Lift/ Mješovita koža<i class="fa fa-check icon-success"></i></li>
+                                <li>Skeyndor Paket Power Hyaluronic/ Normalna do mješovita koža<i class="fa fa-check icon-success"></i></li>
+                                <li>Dermalogica Skin Health Heroes paket<i class="fa fa-check icon-success"></i></li>
+                                <li><del>Dermalogica Skin Detox set</del> <i class="fa fa-times icon-danger"></i></li>
+                            </ul>
+
+                            <div class="price-bottom">
+                                <a href="#" class="btn btn-skin btn-lg">Kupovina</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+}
+
